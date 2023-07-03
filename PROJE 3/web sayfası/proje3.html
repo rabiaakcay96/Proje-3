@@ -3,19 +3,17 @@
 
 <head>
     <title>Just another My WorsPress Sites site</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="proje3.css">
+    <link rel="stylesheet" href="proje3.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
         integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="homepage"
-        style="display:flex;background: url(/image/slider1.png); background-size: cover; width: 100%; height:750px;justify-content: right;position:relative;">
-        <img src="/image/homepage.png"
-            style="display:flex;width:50%; height: 550px; margin-top: 200px;position:absolute;float: right;z-index: 1;">
-        <div class="navbar">
+    <div class="homepage">
+        <img src="/image/homepage.png" class="kamyon">
+        <div class="container">
             <div class="ikiyeböl">
                 <div class="üstbar">
                     <div>
@@ -25,14 +23,14 @@
                         <a href target="_blank" class="info">Mon-Sat:8 am-5 pm,Sunday:CLOSED</a>
                     </div>
                     <div>
-                        <i class="fa fa-phone " style="color:#008eff; font-size: 18px;">
+                        <i class="fa fa-phone phone">
                         </i>
                         <a href target="_blank" class="info">1-888-452-1505</a>
                     </div>
                 </div>
-                <div class="altbar">
+                <nav class="altbar" id="navbar">
                     <div class="logo">
-                        <img src="/image/logo.png" width="90%" height="90%">
+                        <img src="/image/logo.png" width="200px">
                     </div>
                     <div class="dropdowns">
                         <div class="menü">
@@ -110,7 +108,21 @@
                         </div>
                     </div>
                     <button class="border"> Get a quate!</button>
-                </div>
+                </nav>
+                <script>
+                    // Scroll olayını dinleme
+                    window.addEventListener('scroll', function () {
+                        const navbar = document.getElementById('navbar');
+                        const navbarHeight = navbar.offsetHeight;
+                        const currentPosition = window.pageYOffset;
+
+                        if (currentPosition >= navbarHeight) {
+                            navbar.classList.add('scrolled');
+                        } else {
+                            navbar.classList.remove('scrolled');
+                        }
+                    });
+                </script>
                 <div class="text">
                     <div class="text1"> WE SPECIALISE IN THE TRANSPORTATION</div>
                     <div class="text2">Focused on aviation and energy</div>
@@ -326,8 +338,7 @@
                             <img src="/image/arkaplan.jpg" class="manzara">
                         </span>
                         <div class="form">
-                            <form
-                                style="background-image: url(/image/footer.jpg); width: 30%;height: 550px; margin-left: 700px;line-height: 3.0em;padding-left: 20px;">
+                            <form class="form1">
                                 <label for="Freight type" style="color: white;">Freight type:</label>
                                 <select id="Freight type" name="Freight type">
                                     <option value="air">Select</option>
@@ -380,45 +391,45 @@
                                                 <h2>We Create Opportunity to Reach Potential.</h2>
                                             </div>
                                             <div class="list">
-                                                    <div class="madde">
-                                                        <i class="fa fa-check-circle check">
-                                                            <span class="renk">Business it will frequently occur that
-                                                                pleasures.</span>
-                                                        </i>
-                                                    </div>
-                                                    <div class="madde">
-                                                        <i class="fa fa-check-circle check">
-                                                            <span class="renk">Foresee the pain and trouble that are
-                                                                bound.</span>
-                                                        </i>
-                                                    </div>
-                                                    <div class="madde">
-                                                        <i class="fa fa-check-circle check">
-                                                            <span class="renk">Make long term business decisions</span>
-                                                        </i>
-                                                    </div>
-                                                    <div class="madde">
-                                                        <i class="fa fa-check-circle check">
-                                                            <span class="renk">Provide a service we are proud of</span>
-                                                        </i>
-                                                    </div>
-                                                    <div class="madde">
-                                                        <i class="fa fa-check-circle check">
-                                                            <span class="renk">Be a responsible member of the
-                                                                community.</span>
-                                                        </i>
-                                                    </div>
-                                                    <div class="madde">
-                                                        <i class="fa fa-check-circle check">
-                                                            <span class="renk">Do what we like best, every pleasure is
-                                                                to be</span>
-                                                        </i>
-                                                    </div>
-                                                    <div class="madde">
-                                                        <i class="fa fa-check-circle check">
-                                                            <span class="renk">Always seek to improve</span>
-                                                        </i>
-                                                    </div>
+                                                <div class="madde">
+                                                    <i class="fa fa-check-circle check">
+                                                        <span class="renk">Business it will frequently occur that
+                                                            pleasures.</span>
+                                                    </i>
+                                                </div>
+                                                <div class="madde">
+                                                    <i class="fa fa-check-circle check">
+                                                        <span class="renk">Foresee the pain and trouble that are
+                                                            bound.</span>
+                                                    </i>
+                                                </div>
+                                                <div class="madde">
+                                                    <i class="fa fa-check-circle check">
+                                                        <span class="renk">Make long term business decisions</span>
+                                                    </i>
+                                                </div>
+                                                <div class="madde">
+                                                    <i class="fa fa-check-circle check">
+                                                        <span class="renk">Provide a service we are proud of</span>
+                                                    </i>
+                                                </div>
+                                                <div class="madde">
+                                                    <i class="fa fa-check-circle check">
+                                                        <span class="renk">Be a responsible member of the
+                                                            community.</span>
+                                                    </i>
+                                                </div>
+                                                <div class="madde">
+                                                    <i class="fa fa-check-circle check">
+                                                        <span class="renk">Do what we like best, every pleasure is
+                                                            to be</span>
+                                                    </i>
+                                                </div>
+                                                <div class="madde">
+                                                    <i class="fa fa-check-circle check">
+                                                        <span class="renk">Always seek to improve</span>
+                                                    </i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

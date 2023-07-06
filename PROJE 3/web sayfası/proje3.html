@@ -32,90 +32,88 @@
                     <div class="logo">
                         <img src="/image/logo.png" width="200px">
                     </div>
-                    <ul class="dropdowns">
-                        <button class="kapat1" onclick="closeDropdown()"
-                            style="background-color: transparent; border: none; ">
-                            <i class="fas fa-times"
-                                style="color: rgb(141, 4, 4); font-size: 28px; padding-top: 30px; padding-left: 250px;"></i>
-                        </button>
-                        <div class="pencere" id="content">
-                            <div class="logo1">
-                                <img src="/image/logo.png" width="200px">
-                            </div>
-                            <li class="menü">
-                                <button class="home"> Home
-                                    <i class="fa fa-plus" style="color: #fa4318;"></i>
-                                </button>
-                                <div class="homemenü">
-                                    <a href="#"> Home Page 01</a>
-                                    <a href="#"> Home Page 02</a>
-                                    <a href="#"> Home Page 03</a>
-                                    <a href="#"> Home Page 04</a>
-                                    <a href="#"> Home Page 05</a>
-                                    <a href="#"> Home Page 06</a>
-                                    <a href="#"> Home Page 07</a>
-                                    <a href="#"> Home Page 08</a>
-                                    <a href="#"> Home Page 09</a>
-                                    <a href="#"> Home Page 10</a>
-                                    <a href="#"> Home Page 11</a>
-                                    <a href="#"> Header Styles</a>
+                    <ul class="dropdowns" id="mySidebar">
+                        <button onclick="mobileMenu()" class="closebtn" style=" background-color: transparent;border: none; ">
+                        <i class="fas fa-times"
+                            style="color: rgb(141, 4, 4); font-size: 28px; padding-top: 20px; padding-left: 220px;"></i>
+                    </button>
 
-                                </div>
-                            </li>
-                            <li class="menü">
-                                <a href="#" class="home"> About</a>
-                            </li>
-                            <li class="menü">
-                                <button class="home"> Services
-                                    <i class="fa fa-plus" style="color: #fa4318;"></i>
-                                </button>
-                                <div class="homemenü">
-                                    <a href="#"> Our Services</a>
-                                    <a href="#"> Reliability & Punctulity</a>
-                                    <a href="#"> Customer Support</a>
-                                    <a href="#"> Transparent Pricing</a>
-                                    <a href="#"> Warehouses Storage</a>
-                                    <a href="#"> Real Tİme Tracking</a>
-                                    <a href="#"> Trusted Franchise</a>
-                                    <a href="#"> Air Freight</a>
-                                </div>
-                            </li>
-                            <li class="menü">
-                                <button class="home"> Projects
-                                    <i class="fa fa-plus" style="color: #fa4318;"></i>
-                                </button>
-                                <div class="homemenü">
-                                    <a href="#"> Our Projects</a>
-                                    <a href="#"> Projects Details</a>
-                                </div>
-                            </li>
-                            <li class="menü">
-                                <button class="home"> News
-                                    <i class="fa fa-plus" style="color: #fa4318;"></i>
-                                </button>
-                                <div class="homemenü">
-                                    <a href="#"> Our News</a>
-                                    <a href="#"> news Details</a>
-                                    <a href="#"> Error Page</a>
-                                </div>
-                            </li>
-                            <li class="menü">
-                                <button class="home"> Others
-                                    <i class="fa fa-plus" style="color: #fa4318;"></i>
-                                </button>
-                                <div class="homemenü">
-                                    <a href="#"> Our Team</a>
-                                    <a href="#"> Team Details</a>
-                                    <a href="#"> Coming Soon</a>
-                                    <a href="#"> Our Faqs</a>
-                                    <a href="#"> Pricing Plan</a>
-                                    <a href="#"> Contact</a>
-                                    <a href="#"> Shop</a>
-                                    <a href="#"> Cart</a>
-                                    <a href="#"> Check Out</a>
-                                </div>
-                            </li>
+                        <div class="logo1">
+                            <img src="/image/logo.png" width="200px">
                         </div>
+                        <li class="menü">
+                            <button class="home"> Home
+                                <i class="fa fa-plus" style="color: #fa4318;"></i>
+                            </button>
+                            <div class="homemenü">
+                                <a href="#"> Home Page 01</a>
+                                <a href="#"> Home Page 02</a>
+                                <a href="#"> Home Page 03</a>
+                                <a href="#"> Home Page 04</a>
+                                <a href="#"> Home Page 05</a>
+                                <a href="#"> Home Page 06</a>
+                                <a href="#"> Home Page 07</a>
+                                <a href="#"> Home Page 08</a>
+                                <a href="#"> Home Page 09</a>
+                                <a href="#"> Home Page 10</a>
+                                <a href="#"> Home Page 11</a>
+                                <a href="#"> Header Styles</a>
+
+                            </div>
+                        </li>
+                        <li class="menü">
+                            <a href="#" class="home"> About</a>
+                        </li>
+                        <li class="menü">
+                            <button class="home"> Services
+                                <i class="fa fa-plus" style="color: #fa4318;"></i>
+                            </button>
+                            <div class="homemenü">
+                                <a href="#"> Our Services</a>
+                                <a href="#"> Reliability & Punctulity</a>
+                                <a href="#"> Customer Support</a>
+                                <a href="#"> Transparent Pricing</a>
+                                <a href="#"> Warehouses Storage</a>
+                                <a href="#"> Real Tİme Tracking</a>
+                                <a href="#"> Trusted Franchise</a>
+                                <a href="#"> Air Freight</a>
+                            </div>
+                        </li>
+                        <li class="menü">
+                            <button class="home"> Projects
+                                <i class="fa fa-plus" style="color: #fa4318;"></i>
+                            </button>
+                            <div class="homemenü">
+                                <a href="#"> Our Projects</a>
+                                <a href="#"> Projects Details</a>
+                            </div>
+                        </li>
+                        <li class="menü">
+                            <button class="home"> News
+                                <i class="fa fa-plus" style="color: #fa4318;"></i>
+                            </button>
+                            <div class="homemenü">
+                                <a href="#"> Our News</a>
+                                <a href="#"> news Details</a>
+                                <a href="#"> Error Page</a>
+                            </div>
+                        </li>
+                        <li class="menü">
+                            <button class="home"> Others
+                                <i class="fa fa-plus" style="color: #fa4318;"></i>
+                            </button>
+                            <div class="homemenü">
+                                <a href="#"> Our Team</a>
+                                <a href="#"> Team Details</a>
+                                <a href="#"> Coming Soon</a>
+                                <a href="#"> Our Faqs</a>
+                                <a href="#"> Pricing Plan</a>
+                                <a href="#"> Contact</a>
+                                <a href="#"> Shop</a>
+                                <a href="#"> Cart</a>
+                                <a href="#"> Check Out</a>
+                            </div>
+                        </li>
                     </ul>
                     <button class="border"> Get a quate!</button>
                     <div class="burger">
@@ -124,56 +122,6 @@
                         <span class="bar"></span>
                     </div>
                 </nav>
-                <!-- <script>
-                    function toggleDropdown() {
-                        var dropdowns = document.querySelector('.dropdowns');
-                        dropdowns.classList.toggle('show');
-                    }
-
-                    function closeDropdown() {
-                        var dropdown = document.querySelector('.dropdowns');
-                        dropdown.classList.remove('show');
-                    }
-
-                </script> -->
-                <script>
-                    const burger = document.querySelector(".burger");
-                    const dropdowns = document.querySelector(".dropdowns");
-
-                    burger.addEventListener("click", mobileMenu);
-
-                    function mobileMenu() {
-                        burger.classList.toggle("active");
-                        dropdowns.classList.toggle("active");
-                    }
-                </script>
-                <script>
-                    // Scroll olayını dinleme, navbar kaydırma özelliği
-                    window.addEventListener('scroll', function () {
-                        const navbar = document.getElementById('navbar');
-                        const navbarHeight = navbar.offsetHeight;
-                        const currentPosition = window.pageYOffset;
-
-                        if (currentPosition >= navbarHeight) {
-                            navbar.classList.add('scrolled');
-                        } else {
-                            navbar.classList.remove('scrolled');
-                        }
-                    });
-                </script>
-                <script>
-                    // Arka plan scroll önleme
-                    var dropdownContent = document.querySelector('.dropdowns');
-
-                    dropdownContent.addEventListener('mouseover', function () {
-                        document.body.style.overflow = 'hidden';
-                    });
-
-                    dropdownContent.addEventListener('mouseout', function () {
-                        document.body.style.overflow = 'auto';
-                    });
-
-                </script>
                 <div class="text">
                     <div class="text1"> WE SPECIALISE IN THE TRANSPORTATION</div>
                     <div class="text2">Focused on aviation and energy</div>
@@ -407,14 +355,7 @@
                                 <label for="quantity" style="color: white;">DIST(Miles):</label>
                                 <input type="range" id="quantity" name="quantity" min="0" max="3000" step="1">
                                 <span id="rangeValue" style="color: white;">0</span>
-                                <script>
-                                    var rangeInput = document.getElementById("quantity");
-                                    var rangeValue = document.getElementById("rangeValue");
 
-                                    rangeInput.addEventListener("input", function () {
-                                        rangeValue.textContent = rangeInput.value;
-                                    });
-                                </script>
                                 <br>
                                 <label for="name" style="color: white;">Your Name:</label>
                                 <br>
@@ -635,6 +576,53 @@
         </div>
 
     </footer>
+   
+    <script>
+        // Scroll olayını dinleme, navbar kaydırma özelliği
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            const navbarHeight = navbar.offsetHeight;
+            const currentPosition = window.pageYOffset;
+
+            if (currentPosition >= navbarHeight) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        const burger = document.querySelector(".burger");
+        const dropdowns = document.querySelector(".dropdowns");
+
+        burger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            burger.classList.toggle("active");
+            dropdowns.classList.toggle("active");
+        }
+    </script>
+    <script>
+        // Arka plan scroll önleme
+        var dropdownContent = document.querySelector('.dropdowns');
+
+        dropdownContent.addEventListener('mouseover', function () {
+            document.body.style.overflow = 'hidden';
+        });
+
+        dropdownContent.addEventListener('mouseout', function () {
+            document.body.style.overflow = 'auto';
+        });
+
+    </script>
+
+    <script>
+        var rangeInput = document.getElementById("quantity");
+        var rangeValue = document.getElementById("rangeValue");
+
+        rangeInput.addEventListener("input", function () {
+            rangeValue.textContent = rangeInput.value;
+        });
+    </script>
 
 </body>
 

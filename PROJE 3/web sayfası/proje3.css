@@ -85,10 +85,7 @@
 .logo1 {
     display: none;
 }
-.kapat{
-    display: none;
-}
-.kapat1{
+.closebtn{
     display: none;
 }
 .dropdowns {
@@ -218,13 +215,10 @@
         
         padding-left: 40px;
     }
-    .kapat{
-        display: block;
-        
-    }
-    .kapat1{
+    .closebtn{
         display: block;
         cursor: pointer;
+        z-index: 9999 !important;
     }
 
     .altbar {
@@ -295,7 +289,7 @@
 
     .burger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-    }
+    }    
 }
 
 .text {
